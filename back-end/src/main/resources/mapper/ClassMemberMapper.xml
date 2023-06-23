@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.runhuo.live.dao.ClassMemberMapper">
+
+    <insert id="insertMember">
+        insert into ClassMember (classId, userId, joinTime)
+        values (#{classId}, #{userId}, #{joinTime});
+    </insert>
+    <delete id="deleteMember">
+        delete
+        from ClassMember
+        where classId = #{classId}
+          and userId = #{userId};
+    </delete>
+    <delete id="deleteAllMember">
+        delete
+        from ClassMember
+        where classId = #{classId};
+    </delete>
+    <select id="selectClassIdByUserId" resultType="java.lang.Long">
+        select classId
+        from ClassMember
+        where userId = #{userId};
+    </select>
+    <select id="selectUserIdByClassId" resultType="com.runhuo.live.entity.ClassMember">
+        select userId, joinTime
+        from ClassMember
+        where classId = #{classId};
+    </select>
+
+
+</mapper>

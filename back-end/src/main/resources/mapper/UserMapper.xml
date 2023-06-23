@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.runhuo.live.dao.UserMapper">
+    <insert id="userRegister" useGeneratedKeys="true" keyProperty="userId">
+        insert into User (phone, nickname, password, avatar, registerTime)
+        values (#{phone}, #{nickname}, #{password}, #{avatar},
+                #{registerTime});
+    </insert>
+    <update id="userReRegister">
+        update User
+        set age=#{age},
+            sex=#{sex},
+            nickname=#{nickname},
+            signature=#{signature},
+            password=#{password},
+            avatar=#{avatar},
+            registerTime=#{registerTime},
+            jobId=#{jobId},
+            status=#{status},
+            name=#{name},
+            identity=#{identity}
+        where userId = #{userId};
+    </update>
+    <update id="updateUserBasicInfo">
+        update User
+        set nickname=#{nickname},
+            age=#{age},
+            sex=#{sex},
+            signature=#{signature}
+        where userId = #{userId};
+    </update>
+    <update id="updateUserIdentityInfo">
+        update User
+        set name=#{name},
+            identity=#{identity},
+            jobId=#{jobId}
+        where userId = #{userId};
+    </update>
+    <update id="updateUserAvatar">
+        update User
+        set avatar=#{url}
+        where userId = #{userId};
+    </update>
+    <delete id="deleteUserByAdmin">
+        update User
+        set status='N'
+        where userId = #{userId};
+    </delete>
+    <select id="selectUserInLogin" resultType="com.runhuo.live.entity.User">
+        select userId,
+               age,
+               sex,
+               nickname,
+               signature,
+               phone,
+               password,
+               avatar,
+               jobId,
+               registerTime,
+               name,
+               identity
+        from User
+        where phone = #{phone}
+          and status = 'Y';
+    </select>
+    <select id="selectUserInRegister" resultType="com.runhuo.live.entity.User">
+        select userId, phone,status
+        from User
+        where phone = #{phone};
+    </select>
+    <select id="selectNicknameByUserId" resultType="java.lang.String">
+        select nickname
+        from User
+        where userId = #{userId};
+    </select>
+    <select id="selectUserInfoByAdmin" resultType="com.runhuo.live.entity.User">
+        select userId, avatar, nickname, signature, identity, registerTime
+        from User
+        where status = 'Y'
+        order by registerTime desc
+        limit #{index},15;
+    </select>
+    <select id="selectAllUserCount" resultType="java.lang.Integer">
+        select count(*)
+        from User
+        where status = 'Y';
+    </select>
+    <select id="selectUserInPlayByUserId" resultType="com.runhuo.live.entity.User">
+        select avatar, nickname, signature
+        from User
+        where userId = #{userId};
+    </select>
+    <select id="selectUserCareerInfo" resultType="com.runhuo.live.entity.User">
+        select name, identity, jobId
+        from User
+        where userId = #{userId};
+    </select>
+</mapper>

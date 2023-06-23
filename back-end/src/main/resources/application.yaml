@@ -1,0 +1,33 @@
+cloud:
+  mysql:
+    ip: 服务器地址
+    username: root
+    password: mysql密码
+  redis:
+    ip: 服务器地址
+    password: redis密码
+server:
+  port: 8080
+mybatis:
+  mapper-locations: classpath:mapper/*xml
+  type-aliases-package: com.runhuo.live.entity
+spring:
+  servlet:
+    multipart:
+      max-file-size: 1GB
+      max-request-size: 1GB
+  #配置数据库连接池及mysql
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: ${cloud.mysql.username}
+    password: ${cloud.mysql.password}
+    url: jdbc:mysql://${cloud.mysql.ip}:3306/liveTeaching?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true
+    type: com.alibaba.druid.pool.DruidDataSource
+  #配置redis
+  redis:
+    host: ${cloud.redis.ip}
+    port: 6379
+    password: ${cloud.redis.password}
+    jedis:
+      pool:
+        max-active: 8

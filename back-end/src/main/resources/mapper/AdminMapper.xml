@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.runhuo.live.dao.AdminMapper">
+
+    <select id="selectAdminByUsername" resultType="com.runhuo.live.entity.Admin">
+        select password
+        from Admin
+        where username = #{username};
+    </select>
+</mapper>

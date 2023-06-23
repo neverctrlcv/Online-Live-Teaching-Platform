@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="254ddc7c-18f7-4355-9681-07129c19cc77" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\ProgramData\Maven" />
+        <option name="mavenHome" value="E:/Program Files/apache-maven-3.9.0" />
+        <option name="userSettingsFile" value="E:\Program Files\apache-maven-3.9.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2PVBkfozFwq2DWRu5mNIzOIKij1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Graduation_Design/back-end&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.obiscr.chatgpt.settings.ChatGPT&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;a115a25065b29adfe4c0b73391cd5b3a&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Graduation_Design_Runhuo\back-end\target\classes\static\video" />
+      <recent name="D:\Graduation_Design_Runhuo\back-end\src\main\resources\static\video" />
+      <recent name="D:\Graduation_Design_Runhuo\back-end\src\main\resources\static\cover" />
+      <recent name="D:\Graduation_Design_Runhuo\back-end\target\classes\static\cover" />
+      <recent name="D:\Graduation_Design_Runhuo\back-end\src\main\java\com\runhuo\live\utils" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.runhuo.live.service" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Application">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="back-end" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="back-end" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.runhuo.live.Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.runhuo.live.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="Application.Test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="254ddc7c-18f7-4355-9681-07129c19cc77" name="Changes" comment="" />
+      <created>1683532513840</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683532513840</updated>
+      <workItem from="1683532515130" duration="4198000" />
+      <workItem from="1684048787836" duration="2987000" />
+      <workItem from="1684064054116" duration="2602000" />
+      <workItem from="1684130301979" duration="154000" />
+      <workItem from="1684130474885" duration="1005000" />
+      <workItem from="1684302775061" duration="15493000" />
+      <workItem from="1684389326314" duration="17051000" />
+      <workItem from="1684474033625" duration="15497000" />
+      <workItem from="1684563686054" duration="7885000" />
+      <workItem from="1684635026461" duration="18311000" />
+      <workItem from="1684735498581" duration="8735000" />
+      <workItem from="1684809092883" duration="9135000" />
+      <workItem from="1684846540861" duration="1050000" />
+      <workItem from="1684919269785" duration="631000" />
+      <workItem from="1684988372936" duration="1953000" />
+      <workItem from="1685001898679" duration="1531000" />
+      <workItem from="1685029129488" duration="636000" />
+      <workItem from="1685074562977" duration="1217000" />
+      <workItem from="1685105502441" duration="2669000" />
+      <workItem from="1685163183508" duration="11976000" />
+      <workItem from="1685240903712" duration="1024000" />
+      <workItem from="1685250825418" duration="671000" />
+      <workItem from="1685257599673" duration="923000" />
+      <workItem from="1685279315616" duration="2000" />
+      <workItem from="1685324835831" duration="526000" />
+      <workItem from="1685325922045" duration="269000" />
+      <workItem from="1685329538391" duration="328000" />
+      <workItem from="1685343157016" duration="675000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

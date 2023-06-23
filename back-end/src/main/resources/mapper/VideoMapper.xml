@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.runhuo.live.dao.VideoMapper">
+
+    <insert id="insertVideo" useGeneratedKeys="true" keyProperty="videoId">
+        insert into Video (link, playCount, videoLength, uploadTime, description, userId, cover)
+        values (#{link}, #{playCount}, #{videoLength}, #{uploadTime}, #{description}, #{userId}, #{cover});
+    </insert>
+    <update id="shareVideo">
+        update Video
+        set status='Y'
+        where videoId = #{videoId};
+    </update>
+    <update id="hiddenVideo">
+        update Video
+        set status='N'
+        where videoId = #{videoId};
+    </update>
+    <update id="deleteVideo">
+        update Video
+        set isDelete='Y'
+        where videoId = #{videoId};
+    </update>
+    <update id="updatePlayCountByVideoId">
+        update Video
+        set playCount=playCount + 1
+        where videoId = #{videoId};
+    </update>
+    <select id="selectVideoByUserId" resultType="com.runhuo.live.entity.Video">
+        select videoId,
+               link,
+               playCount,
+               uploadTime,
+               description,
+               userId,
+               cover,
+               status,
+               videoLength
+        from Video
+        where userId = #{userId}
+          and isDelete = 'N' order by uploadTime desc;
+    </select>
+    <select id="selectVideoByKeyword" resultType="com.runhuo.live.entity.Video">
+        select videoId, playCount, videoLength, uploadTime, description, userId, cover
+        from Video
+        where isDelete = 'N'
+          and status = 'Y'
+          and description like CONCAT('%', #{keyword}, '%')
+        limit #{index},#{limit};
+    </select>
+    <select id="selectVideoInfoByAdmin" resultType="com.runhuo.live.entity.Video">
+        select videoId, playCount, videoLength, uploadTime, description, userId, cover
+        from Video
+        where isDelete = 'N'
+        limit #{index},15;
+    </select>
+    <select id="selectAllVideoCount" resultType="java.lang.Long">
+        select count(*)
+        from Video where isDelete='N';
+    </select>
+    <select id="selectVideoByVideoId" resultType="com.runhuo.live.entity.Video">
+        select videoId, link, playCount, uploadTime, cover, description, videoLength,userId
+        from Video
+        where videoId = #{videoId};
+    </select>
+
+
+</mapper>
